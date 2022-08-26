@@ -1,0 +1,15 @@
+E:\Bootcamp\Program\CSharpLogic\Day2\Day2\bin\Debug\net6.0\Day2.exe
+E:\Bootcamp\Program\CSharpLogic\Day2\Day2\bin\Debug\net6.0\Day2.deps.json
+E:\Bootcamp\Program\CSharpLogic\Day2\Day2\bin\Debug\net6.0\Day2.runtimeconfig.json
+E:\Bootcamp\Program\CSharpLogic\Day2\Day2\bin\Debug\net6.0\Day2.dll
+E:\Bootcamp\Program\CSharpLogic\Day2\Day2\bin\Debug\net6.0\Day2.pdb
+E:\Bootcamp\Program\CSharpLogic\Day2\Day2\obj\Debug\net6.0\Day2.csproj.AssemblyReference.cache
+E:\Bootcamp\Program\CSharpLogic\Day2\Day2\obj\Debug\net6.0\Day2.GeneratedMSBuildEditorConfig.editorconfig
+E:\Bootcamp\Program\CSharpLogic\Day2\Day2\obj\Debug\net6.0\Day2.AssemblyInfoInputs.cache
+E:\Bootcamp\Program\CSharpLogic\Day2\Day2\obj\Debug\net6.0\Day2.AssemblyInfo.cs
+E:\Bootcamp\Program\CSharpLogic\Day2\Day2\obj\Debug\net6.0\Day2.csproj.CoreCompileInputs.cache
+E:\Bootcamp\Program\CSharpLogic\Day2\Day2\obj\Debug\net6.0\Day2.dll
+E:\Bootcamp\Program\CSharpLogic\Day2\Day2\obj\Debug\net6.0\refint\Day2.dll
+E:\Bootcamp\Program\CSharpLogic\Day2\Day2\obj\Debug\net6.0\Day2.pdb
+E:\Bootcamp\Program\CSharpLogic\Day2\Day2\obj\Debug\net6.0\Day2.genruntimeconfig.cache
+E:\Bootcamp\Program\CSharpLogic\Day2\Day2\obj\Debug\net6.0\ref\Day2.dll
