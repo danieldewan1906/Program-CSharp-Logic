@@ -44,7 +44,7 @@ namespace Day2
                     }
                     else if (j > i)
                     {
-                        matrix[i,j] = 10;
+                        matrix[i, j] = 10;
                     }
                     else
                     {
@@ -62,17 +62,124 @@ namespace Day2
             int count = 0;
             for (int i = 0; i < nilai.GetLength(0); i++)
             {
+                count = 0;
                 Console.Write($"Student-{i} : ");
                 for (int j = 0; j < nilai.GetLength(1); j++)
                 {
-                    Console.Write(nilai[i,j]);
-                    if (nilai[i,j] == kunci[j])
+                    Console.Write($"{nilai[i, j]} ");
+                    if (nilai[i, j] == kunci[j])
                     {
                         count += 1;
                     }
                 }
+                Console.WriteLine($"\nJawaban student {i} yang benar : {count}");
             }
             return count;
+        }
+        public static int[,] MatrixDiagonalNo9(int baris, int kolom)
+        {
+            int[,] matrix = new int[baris, kolom];
+            int count = 5;
+
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    // diagonal (baris == kolom)
+                    if (i == j)
+                    {
+                        matrix[i, j] = count--;
+                    }
+                    else if (j > i)
+                    {
+                        matrix[i, j] = 10;
+                    }
+                    else
+                    {
+                        matrix[i, j] = 20;
+                    }
+                }
+            }
+            return matrix;
+        }
+        public static int[,] SumMatrixDiagonal(int baris, int kolom)
+        {
+            int[,] matrix = new int[baris, kolom];
+            Random r = new Random();
+            int sum = 0;
+
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    matrix[i, j] = r.Next(20);
+                    // diagonal (baris == kolom)
+                    if (i == j)
+                    {
+                        sum += matrix[i, j];
+                    }
+                }
+            }
+            DisplayMatrix(matrix);
+            Console.WriteLine($"Total Sum Diagonal Value : {sum}");
+            return matrix;
+        }
+        public static int[,] EmptyMidMatrix(int baris, int kolom)
+        {
+            int[,] array = new int[baris, kolom];
+            int n = baris - 1;
+
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    array[i, j] = i + j;
+                    if (i != 0 && j != 0)
+                    {
+                        if (i != n && j != n)
+                        {
+                            array[i, j] = 0;
+                        }
+                    }
+                }
+            }
+            return array;
+        }
+        public static int[,] SumMatriks(int baris, int kolom)
+        {
+            int[,] matrix = new int[baris, kolom];
+            int sum = 0;
+            int sum2 = 0;
+            int n = baris - 1;
+
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    if (i != n && j != n)
+                    {
+                        matrix[i, j] = i + j;
+                        if (j <= n)
+                        {
+                            sum += matrix[i, j];
+                            matrix[n, i] = matrix[i, n] = sum;
+
+                            if (i == j)
+                            {
+                                sum2 += matrix[i, j];
+                                matrix[n, n] = sum2;
+                            }
+
+                            if (j == n - 1)
+                            {
+                                sum = 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            return matrix;
         }
         public static void DisplayMatrix(int[,] matrix)
         {
@@ -80,7 +187,7 @@ namespace Day2
             {
                 for (int j = 0; j < matrix.GetLength(1); j++) //looping kolom
                 {
-                    Console.Write(matrix[i,j] + "\t");
+                    Console.Write(matrix[i, j] + "\t");
                 }
                 Console.WriteLine();
             }

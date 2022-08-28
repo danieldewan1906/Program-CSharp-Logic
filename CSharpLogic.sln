@@ -7,7 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logic-CSharp", "Logic-CShar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day1", "Day1\Day1\Day1.csproj", "{0BBB1EE8-0150-4A60-8BE6-6FF8202D9DBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day2", "Day2\Day2\Day2.csproj", "{F1ECBACC-9186-41E0-A656-CC96447E0FDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day2", "Day2\Day2\Day2.csproj", "{F1ECBACC-9186-41E0-A656-CC96447E0FDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day3", "day3\Day3\Day3.csproj", "{D34999F9-6CB2-41BF-B6FB-F94180B847D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{F1ECBACC-9186-41E0-A656-CC96447E0FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1ECBACC-9186-41E0-A656-CC96447E0FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1ECBACC-9186-41E0-A656-CC96447E0FDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D34999F9-6CB2-41BF-B6FB-F94180B847D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D34999F9-6CB2-41BF-B6FB-F94180B847D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D34999F9-6CB2-41BF-B6FB-F94180B847D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D34999F9-6CB2-41BF-B6FB-F94180B847D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{0BBB1EE8-0150-4A60-8BE6-6FF8202D9DBA} = {03431479-73F2-4A92-8EDC-8EEE876DB3AB}
 		{F1ECBACC-9186-41E0-A656-CC96447E0FDF} = {03431479-73F2-4A92-8EDC-8EEE876DB3AB}
+		{D34999F9-6CB2-41BF-B6FB-F94180B847D8} = {03431479-73F2-4A92-8EDC-8EEE876DB3AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8760ECC4-ADA7-48CD-A174-BA29A3851FD4}

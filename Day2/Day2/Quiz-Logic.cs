@@ -86,8 +86,83 @@ namespace Day2
             }
             return arr;
         }
+        public static int[] CountNumberNo5(int[] arr)
+        {
+            int[] nilai = arr;
+            Array.Sort(nilai);
+            int count;
+            int temp;
 
-        public static int RemoveDuplicate(int[] arr)
+            for (int i = 0; i < nilai.Length; i++)
+            {
+                count = 0;
+                //temp = nilai[i];
+                for (int j = 0; j <= nilai.Length - 1; j++)
+                {
+                    if (nilai[i] == nilai[j])
+                    {
+                        count++;
+                    }
+                }
+                if (i < nilai.Length - 1 && nilai[i] != nilai[i + 1])
+                {
+                    Console.WriteLine($"{nilai[i]} muncul sebanyak {count}");
+                }
+                else if (i == nilai.Length - 1)
+                {
+                    Console.WriteLine($"{nilai[i]} muncul sebanyak {count}");
+                }
+
+            }
+            return nilai;
+        }
+        public static void ShiftingDuplicateNumberNo6(int[] nilai)
+        {
+            int[] arr = nilai;
+            Array.Sort(arr);
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                int temp = arr[i];
+                if (i < arr.Length - 1 && temp == arr[i + 1])
+                {
+                    for (int j = i; j < arr.Length; j++)
+                    {
+                        if (j == arr.Length - 1)
+                        {
+                            arr[j] = -1;
+                        }
+                        else
+                        {
+                            arr[j] = arr[j + 1];
+                        }
+                    }
+                }
+            }
+
+            /*for (int i = 0; i < nilai.Length; i++)
+            {
+                int temp = arr[0];
+                if (i < arr.Length - 1 && temp == arr[i + 1])
+                {
+                    for (int j = i; j < nilai.Length; j++)
+                    {
+                        if (j == arr.Length - 1)
+                        {
+                            arr[j] = -1;
+                        }
+                        else
+                        {
+                            arr[j] = arr[j + 1];
+                        }
+                    }
+                }
+            }*/
+            DisplayArray(arr);
+            //return arr;
+        }
+
+        public static int RemoveDuplicateNo7(int[] arr)
         {
             int[] nilai = arr;
             Array.Sort(nilai);
@@ -109,30 +184,192 @@ namespace Day2
             return j;
         }
 
-        public static int SumCorrectTest(char[] key, int stud, int scor)
+        public static char[] SumDuplicateElement(int arr)
         {
-            int[] siswa = new int[stud];
-            char[] nilai = new char[scor];
+            char[] nilai = new char[arr];
+            var value = "abcdefghijklmnopqrstuvwxyz";
+            Random r = new Random();
             int count = 0;
-
-            for (int i = 0; i < siswa.Length; i++)
+            for (int i = 0; i < nilai.Length; i++)
             {
-                Console.WriteLine($"Student - {i} : ");
-                for (int j = 0; j < nilai.Length; j++)
+                nilai[i] = value[r.Next(0, 26)];
+            }
+
+            DisplayChar(nilai);
+            Console.WriteLine();
+            Console.WriteLine("----------RESULT----------");
+
+            Array.Sort(nilai);
+            for (int i = 0; i < nilai.Length; i++)
+            {
+                count = 0;
+                for (int j = 0; j <= nilai.Length - 1; j++)
                 {
-                    Console.Write($"Nilai {j} : ");
-                    char sc = Convert.ToChar(Console.ReadLine());
-                    nilai[j] = sc;
-                    if (nilai[j] == key[j])
+                    if (nilai[i] == nilai[j])
                     {
                         count++;
                     }
                 }
+                if (i < nilai.Length - 1 && nilai[i] != nilai[i + 1])
+                {
+                    Console.Write($"{count} {nilai[i]} ");
+                }
+                else if (i == nilai.Length - 1)
+                {
+                    Console.Write($"{count} {nilai[i]} ");
+                }
+
             }
-            return count;
+            return nilai;
+        }
+
+        public static void ScorsStudent(char[,] scors, char[] key)
+        {
+            char[,] nilai = scors;
+            char[] kunci = key;
+            int count = 0;
+            for (int i = 0; i < nilai.GetLength(0); i++)
+            {
+                count = 0;
+                Console.Write($"Student-{i} : ");
+                for (int j = 0; j < nilai.GetLength(1); j++)
+                {
+                    Console.Write($"{nilai[i, j]} ");
+                    if (nilai[i, j] == kunci[j])
+                    {
+                        count += 1;
+                    }
+                }
+                Console.WriteLine($"\nJawaban student {i} yang benar : {count}");
+            }
+        }
+        public static int[,] MatrixDiagonalNo9(int baris, int kolom)
+        {
+            int[,] matrix = new int[baris, kolom];
+            int count = 5;
+
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    // diagonal (baris == kolom)
+                    if (i == j)
+                    {
+                        matrix[i, j] = count--;
+                    }
+                    else if (j > i)
+                    {
+                        matrix[i, j] = 10;
+                    }
+                    else
+                    {
+                        matrix[i, j] = 20;
+                    }
+                }
+            }
+            return matrix;
+        }
+        public static int[,] SumMatrixDiagonal(int baris, int kolom)
+        {
+            int[,] matrix = new int[baris, kolom];
+            Random r = new Random();
+            int sum = 0;
+
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    matrix[i, j] = r.Next(20);
+                    // diagonal (baris == kolom)
+                    if (i == j)
+                    {
+                        sum += matrix[i, j];
+                    }
+                }
+            }
+            DisplayMatrix(matrix);
+            Console.WriteLine($"Total Sum Diagonal Value : {sum}");
+            return matrix;
+        }
+        public static int[,] EmptyMidMatrix(int baris, int kolom)
+        {
+            int[,] array = new int[baris, kolom];
+            int n = baris - 1;
+
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    array[i, j] = i + j;
+                    if (i != 0 && j != 0)
+                    {
+                        if (i != n && j != n)
+                        {
+                            array[i, j] = 0;
+                        }
+                    }
+                }
+            }
+            return array;
+        }
+        public static int[,] SumMatriks(int baris, int kolom)
+        {
+            int[,] matrix = new int[baris, kolom];
+            int sum = 0;
+            int sum2 = 0;
+            int n = baris - 1;
+
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    if (i != n && j != n)
+                    {
+                        matrix[i, j] = i + j;
+                        if (j <= n)
+                        {
+                            sum += matrix[i, j];
+                            matrix[n, i] = matrix[i, n] = sum;
+
+                            if (i == j)
+                            {
+                                sum2 += matrix[i, j];
+                                matrix[n, n] = sum2;
+                            }
+
+                            if (j == n - 1)
+                            {
+                                sum = 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            return matrix;
+        }
+
+
+        public static void DisplayMatrix(int[,] matrix)
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++) //looping baris
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++) //looping kolom
+                {
+                    Console.Write(matrix[i, j] + "\t");
+                }
+                Console.WriteLine();
+            }
         }
 
         public static void DisplayArray(int[] arr)
+        {
+            foreach (var item in arr)
+            {
+                Console.Write($"{item} ");
+            }
+        }
+        public static void DisplayChar(char[] arr)
         {
             foreach (var item in arr)
             {
