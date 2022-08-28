@@ -67,7 +67,7 @@ QuizLogic.DisplayArray(geser);*/
 QuizLogic.CountNumberNo5(nilai);*/
 
 //no6
-var nilai = new int[] { 1, 5, 3, 7, 8, 5, 1 };
+/*var nilai = new int[] { 1, 5, 3, 7, 8, 5, 1 };
 var randomIndex = QuizLogic.RandomArrayNo1(nilai);
 Console.WriteLine("Number : ");
 QuizLogic.DisplayArray(randomIndex);
@@ -75,12 +75,6 @@ Console.WriteLine();
 
 Console.WriteLine("After Marker : ");
 QuizLogic.ShiftingDuplicateNumberNo6(nilai);
-Console.WriteLine();
-
-
-/*var shiftingDuplicate = QuizLogic.ShiftingDuplicateNumberNo6(nilai);
-Console.WriteLine("After Marker : ");
-QuizLogic.DisplayArray(shiftingDuplicate);
 Console.WriteLine();*/
 
 // no 7
@@ -97,16 +91,26 @@ for (int i = 0; i < removeDuplicate; i++)
 }*/
 
 // no 8
-/*var element = QuizLogic.SumDuplicateElement(100);
+/*var element = QuizLogic.SumDuplicateElementNo8(100);
 QuizLogic.DisplayChar(element);*/
 
-/*
- * LATIHAN MATRIKS
- */
+// no 9
 /*var myMatrix = Matrix.MatrixDiagonalNo9(5, 5);
 Matrix.DisplayMatrix(myMatrix);*/
 
-char[,] scors = new char[,] {
+// no 10
+//var sum = Matrix.SumMatrixDiagonalNo10(5, 5);
+
+// no 11
+/*var empty = QuizLogic.EmptyMidMatrixNo11(7, 7);
+QuizLogic.DisplayMatrix(empty);*/
+
+// no 12
+/*var sumMatriks = QuizLogic.SumMatriksNo12(8, 8);
+QuizLogic.DisplayMatrix(sumMatriks);*/
+
+// no 15
+/*char[,] scors = new char[,] {
                               {'A', 'B', 'A', 'C', 'C', 'D', 'E', 'E', 'A', 'D'},
                               {'D', 'B', 'A', 'B', 'C', 'A', 'E', 'E', 'A', 'D'},
                               {'E', 'D', 'D', 'A', 'C', 'B', 'E', 'E', 'A', 'D'},
@@ -117,17 +121,6 @@ char[,] scors = new char[,] {
                               {'E', 'B', 'E', 'C', 'C', 'D', 'E', 'E', 'A', 'D'},
                             };
 char[] key = new char[] { 'D', 'B', 'D', 'C', 'C', 'D', 'A', 'E', 'A', 'D' };
-var temp = Matrix.ScorsStudent(scors, key);
-
-//var sum = Matrix.SumMatrixDiagonal(5, 5);
-
-/*var empty = QuizLogic.EmptyMidMatrix(7, 7);
-QuizLogic.DisplayMatrix(empty);*/
-
-/*var sumMatriks = QuizLogic.SumMatriks(8, 8);
-QuizLogic.DisplayMatrix(sumMatriks);*/
-
-/*int[] nilai = new int[] { 5, 2, 30, 12, 10, 5, 2, 10, 5 };
-var coba = QuizLogic.CountNumberNo5(nilai);*/
+var temp = Matrix.ScorsStudentNo15(scors, key);*/
 
 Console.ReadLine();

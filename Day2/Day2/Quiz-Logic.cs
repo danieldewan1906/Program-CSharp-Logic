@@ -86,7 +86,7 @@ namespace Day2
             }
             return arr;
         }
-        public static int[] CountNumberNo5(int[] arr)
+        public static void CountNumberNo5(int[] arr)
         {
             int[] nilai = arr;
             Array.Sort(nilai);
@@ -114,7 +114,6 @@ namespace Day2
                 }
 
             }
-            return nilai;
         }
         public static void ShiftingDuplicateNumberNo6(int[] nilai)
         {
@@ -184,7 +183,7 @@ namespace Day2
             return j;
         }
 
-        public static char[] SumDuplicateElement(int arr)
+        public static void SumDuplicateElementNo8(int arr)
         {
             char[] nilai = new char[arr];
             var value = "abcdefghijklmnopqrstuvwxyz";
@@ -220,28 +219,6 @@ namespace Day2
                 }
 
             }
-            return nilai;
-        }
-
-        public static void ScorsStudent(char[,] scors, char[] key)
-        {
-            char[,] nilai = scors;
-            char[] kunci = key;
-            int count = 0;
-            for (int i = 0; i < nilai.GetLength(0); i++)
-            {
-                count = 0;
-                Console.Write($"Student-{i} : ");
-                for (int j = 0; j < nilai.GetLength(1); j++)
-                {
-                    Console.Write($"{nilai[i, j]} ");
-                    if (nilai[i, j] == kunci[j])
-                    {
-                        count += 1;
-                    }
-                }
-                Console.WriteLine($"\nJawaban student {i} yang benar : {count}");
-            }
         }
         public static int[,] MatrixDiagonalNo9(int baris, int kolom)
         {
@@ -269,7 +246,7 @@ namespace Day2
             }
             return matrix;
         }
-        public static int[,] SumMatrixDiagonal(int baris, int kolom)
+        public static void SumMatrixDiagonalNo10(int baris, int kolom)
         {
             int[,] matrix = new int[baris, kolom];
             Random r = new Random();
@@ -289,9 +266,8 @@ namespace Day2
             }
             DisplayMatrix(matrix);
             Console.WriteLine($"Total Sum Diagonal Value : {sum}");
-            return matrix;
         }
-        public static int[,] EmptyMidMatrix(int baris, int kolom)
+        public static int[,] EmptyMidMatrixNo11(int baris, int kolom)
         {
             int[,] array = new int[baris, kolom];
             int n = baris - 1;
@@ -312,7 +288,7 @@ namespace Day2
             }
             return array;
         }
-        public static int[,] SumMatriks(int baris, int kolom)
+        public static int[,] SumMatriksNo12(int baris, int kolom)
         {
             int[,] matrix = new int[baris, kolom];
             int sum = 0;
@@ -345,11 +321,29 @@ namespace Day2
                     }
                 }
             }
-
             return matrix;
         }
-
-
+        public static void ScorsStudentNo15(char[,] scors, char[] key)
+        {
+            char[,] nilai = scors;
+            char[] kunci = key;
+            int count = 0;
+            for (int i = 0; i < nilai.GetLength(0); i++)
+            {
+                count = 0;
+                Console.Write($"Student-{i} : ");
+                for (int j = 0; j < nilai.GetLength(1); j++)
+                {
+                    Console.Write($"{nilai[i, j]} ");
+                    if (nilai[i, j] == kunci[j])
+                    {
+                        count += 1;
+                    }
+                }
+                Console.WriteLine($"\nJawaban student {i} yang benar : {count}");
+            }
+        }
+        //Display
         public static void DisplayMatrix(int[,] matrix)
         {
             for (int i = 0; i < matrix.GetLength(0); i++) //looping baris
