@@ -8,13 +8,13 @@ namespace Day3
 {
     internal class QuizLogicDay3
     {
-        /*public static List<T> DisplayList<T>(ref List<T> list)
+        public static void ShowList<T>(List<T> list)
         {
             foreach (var item in list)
             {
                 Console.Write($"{item} ");
             }
-        }*/
+        }
         public static List<T> Nomor1<T>(ref List<T> list1, ref List<T> list2)
         {
             var myList = list1;
@@ -101,6 +101,37 @@ namespace Day3
             {
                 Console.Write($"{item} ");
             }
+            return myList;
+        }
+
+        public static List<T> ListSameDifferent<T>(ref List<T> list, ref List<T> list2)
+        {
+            var myList = list;
+            var yourList = list2;
+            var result = new List<T>();
+            foreach (var item in myList)
+            {
+                if (yourList.Contains(item))
+                {
+                    result.Add(item);
+                }
+            }
+            return result;
+        }
+        public static Dictionary<int, long> ValueCount<T>(ref List<T> list)
+        {
+            var dict = new Dictionary<int, long>();
+            var myList = list;
+            myList.Sort();
+            
+            return dict;
+        }
+       
+        public static List<T> ListAddition<T>(ref List<T> list1, ref List<T> list2)
+        {
+            var myList = list1;
+            var yourList = list2;
+            Console.WriteLine(myList.Count);
             return myList;
         }
 

@@ -1,0 +1,15 @@
+E:\Bootcamp\Program\CSharpLogic\QuizOPP\QuizOOP\bin\Debug\net6.0\QuizOOP.exe
+E:\Bootcamp\Program\CSharpLogic\QuizOPP\QuizOOP\bin\Debug\net6.0\QuizOOP.deps.json
+E:\Bootcamp\Program\CSharpLogic\QuizOPP\QuizOOP\bin\Debug\net6.0\QuizOOP.runtimeconfig.json
+E:\Bootcamp\Program\CSharpLogic\QuizOPP\QuizOOP\bin\Debug\net6.0\QuizOOP.dll
+E:\Bootcamp\Program\CSharpLogic\QuizOPP\QuizOOP\bin\Debug\net6.0\QuizOOP.pdb
+E:\Bootcamp\Program\CSharpLogic\QuizOPP\QuizOOP\obj\Debug\net6.0\QuizOOP.csproj.AssemblyReference.cache
+E:\Bootcamp\Program\CSharpLogic\QuizOPP\QuizOOP\obj\Debug\net6.0\QuizOOP.GeneratedMSBuildEditorConfig.editorconfig
+E:\Bootcamp\Program\CSharpLogic\QuizOPP\QuizOOP\obj\Debug\net6.0\QuizOOP.AssemblyInfoInputs.cache
+E:\Bootcamp\Program\CSharpLogic\QuizOPP\QuizOOP\obj\Debug\net6.0\QuizOOP.AssemblyInfo.cs
+E:\Bootcamp\Program\CSharpLogic\QuizOPP\QuizOOP\obj\Debug\net6.0\QuizOOP.csproj.CoreCompileInputs.cache
+E:\Bootcamp\Program\CSharpLogic\QuizOPP\QuizOOP\obj\Debug\net6.0\QuizOOP.dll
+E:\Bootcamp\Program\CSharpLogic\QuizOPP\QuizOOP\obj\Debug\net6.0\refint\QuizOOP.dll
+E:\Bootcamp\Program\CSharpLogic\QuizOPP\QuizOOP\obj\Debug\net6.0\QuizOOP.pdb
+E:\Bootcamp\Program\CSharpLogic\QuizOPP\QuizOOP\obj\Debug\net6.0\QuizOOP.genruntimeconfig.cache
+E:\Bootcamp\Program\CSharpLogic\QuizOPP\QuizOOP\obj\Debug\net6.0\ref\QuizOOP.dll
