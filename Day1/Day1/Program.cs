@@ -31,8 +31,8 @@ namespace Day1 // Note: actual namespace depends on the project name.
             //Latihan_Day1.PalindromeNo9();
             //Latihan_Day1.VocalConsonantNo10();
             //Latihan_Day1.JumlahKataNo11();
-            Latihan_Day1.ReplaceMiddleCharacterNo12();
-            //Latihan_Day1.HitungHariNo13();
+            //Latihan_Day1.ReplaceMiddleCharacterNo12();
+            Latihan_Day1.HitungHariNo13();
             //Latihan_Day1.MenemukkanPolaNo14();
             //Latihan_Day1.AngkaKeduaTerbesarNo15();
 

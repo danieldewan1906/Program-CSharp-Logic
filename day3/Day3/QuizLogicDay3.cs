@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.IsolatedStorage;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,6 +15,14 @@ namespace Day3
             foreach (var item in list)
             {
                 Console.Write($"{item} ");
+            }
+        }
+
+        public static void ShowDictionary(Dictionary<int, long> list)
+        {
+            foreach (var item in list)
+            {
+                Console.Write($"{item.Key} {item.Value}");
             }
         }
         public static List<T> Nomor1<T>(ref List<T> list1, ref List<T> list2)
@@ -108,32 +118,57 @@ namespace Day3
         {
             var myList = list;
             var yourList = list2;
-            var result = new List<T>();
-            foreach (var item in myList)
+            var result = new HashSet<T>(myList);
+            result.IntersectWith(yourList);
+            foreach (var item in result.ToList())
             {
-                if (yourList.Contains(item))
-                {
-                    result.Add(item);
-                }
+                Console.Write($"{item} ");
             }
-            return result;
+
+            var result2 = new HashSet<T>(myList);
+            result2.SymmetricExceptWith(yourList);
+            Console.WriteLine();
+            foreach (var item in result2.ToList())
+            {
+                Console.Write($"{item} ");
+            }
+            return myList;
         }
         public static Dictionary<int, long> ValueCount<T>(ref List<T> list)
         {
             var dict = new Dictionary<int, long>();
             var myList = list;
+            long count = 0;
             myList.Sort();
+            foreach (var item in myList)
+            {
+                count = 0;
+                foreach (var item2 in myList)
+                {
+                    if (item.Equals(item2))
+                    {
+                        count++;
+                    }
+                }
+                dict.Add(Convert.ToInt16(item), count);
+                Console.WriteLine(dict);
+            }
+
             
             return dict;
         }
-       
-        public static List<T> ListAddition<T>(ref List<T> list1, ref List<T> list2)
-        {
-            var myList = list1;
-            var yourList = list2;
-            Console.WriteLine(myList.Count);
-            return myList;
-        }
+
+        /*       public static List<T> ListAddition<T>(ref List<T> list1, ref List<T> list2)
+               {
+                   var myList = list1;
+                   var yourList = list2;
+                   var tempList = new List<T>();
+                   for (int i = 0; i < myList.Count; i++)
+                   {
+                       tempList.Where(x => x++);
+                   }
+                   return tempList;
+               }*/
 
     }
 }
