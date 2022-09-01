@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day4", "Day4\Day4\Day4.cspr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizOOP", "QuizOPP\QuizOOP\QuizOOP.csproj", "{1F716E6C-68B6-4BFE-901E-9A9EF73C7F6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day5", "Day5\Day5\Day5.csproj", "{344E0F74-BDFB-49A0-B8F2-051DF9A3B7B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day5", "Day5\Day5\Day5.csproj", "{344E0F74-BDFB-49A0-B8F2-051DF9A3B7B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalTest2022", "FinalTest\FinalTest2022\FinalTest2022.csproj", "{92033954-B4A0-43EB-925D-44D13EBC25C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{344E0F74-BDFB-49A0-B8F2-051DF9A3B7B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{344E0F74-BDFB-49A0-B8F2-051DF9A3B7B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{344E0F74-BDFB-49A0-B8F2-051DF9A3B7B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92033954-B4A0-43EB-925D-44D13EBC25C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92033954-B4A0-43EB-925D-44D13EBC25C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92033954-B4A0-43EB-925D-44D13EBC25C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92033954-B4A0-43EB-925D-44D13EBC25C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

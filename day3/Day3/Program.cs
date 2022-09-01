@@ -37,14 +37,14 @@ QuizLogicDay3.Reverse(ref list);*/
 QuizLogicDay3.RemoveDuplicate(ref list);*/
 
 // no 5
-var list = new List<string>() { "Mangga", "Apel", "Melon", "Pisang", "Sirsak", "Tomat", "Nanas", "Nangka", "Timun" };
+/*var list = new List<string>() { "Mangga", "Apel", "Melon", "Pisang", "Sirsak", "Tomat", "Nanas", "Nangka", "Timun" };
 var list2 = new List<string>() { "Bayam", "Wortel", "Kangkung", "Mangga", "Tomat", "Kembang Kol", "Nangka", "Timun" };
-var different = QuizLogicDay3.ListSameDifferent(ref list, ref list2);
+var different = QuizLogicDay3.ListSameDifferent(ref list, ref list2);*/
 
 // no 6
-/*var list = new List<int>() { 1, 2, 3, 4, 4, 4, 3, 3, 2, 4 };
+var list = new List<int>() { 1, 2, 3, 4, 4, 4, 3, 3, 2, 4 };
 var value = QuizLogicDay3.ValueCount(ref list);
-QuizLogicDay3.ShowDictionary(value);*/
+QuizLogicDay3.ShowDictionary(value);
 
 // no 7
 /*var list = new List<int>() { 1, 2, 3 };

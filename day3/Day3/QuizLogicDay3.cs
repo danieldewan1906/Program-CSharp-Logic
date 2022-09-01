@@ -136,39 +136,24 @@ namespace Day3
         }
         public static Dictionary<int, long> ValueCount<T>(ref List<T> list)
         {
-            var dict = new Dictionary<int, long>();
+            var dict = new Dictionary<int, long>;
             var myList = list;
             long count = 0;
             myList.Sort();
-            foreach (var item in myList)
-            {
-                count = 0;
-                foreach (var item2 in myList)
-                {
-                    if (item.Equals(item2))
-                    {
-                        count++;
-                    }
-                }
-                dict.Add(Convert.ToInt16(item), count);
-                Console.WriteLine(dict);
-            }
-
             
+
+
             return dict;
         }
 
-        /*       public static List<T> ListAddition<T>(ref List<T> list1, ref List<T> list2)
-               {
-                   var myList = list1;
-                   var yourList = list2;
-                   var tempList = new List<T>();
-                   for (int i = 0; i < myList.Count; i++)
-                   {
-                       tempList.Where(x => x++);
-                   }
-                   return tempList;
-               }*/
+        public static List<T> ListAddition<T>(ref List<T> list1, ref List<T> list2)
+        {
+            var myList = list1;
+            var yourList = list2;
+            var tempList = new List<T>();
+            
+            return tempList;
+        }
 
     }
 }

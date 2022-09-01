@@ -1,0 +1,15 @@
+E:\Bootcamp\Program\CSharpLogic\FinalTest\FinalTest2022\bin\Debug\net6.0\FinalTest2022.exe
+E:\Bootcamp\Program\CSharpLogic\FinalTest\FinalTest2022\bin\Debug\net6.0\FinalTest2022.deps.json
+E:\Bootcamp\Program\CSharpLogic\FinalTest\FinalTest2022\bin\Debug\net6.0\FinalTest2022.runtimeconfig.json
+E:\Bootcamp\Program\CSharpLogic\FinalTest\FinalTest2022\bin\Debug\net6.0\FinalTest2022.dll
+E:\Bootcamp\Program\CSharpLogic\FinalTest\FinalTest2022\bin\Debug\net6.0\FinalTest2022.pdb
+E:\Bootcamp\Program\CSharpLogic\FinalTest\FinalTest2022\obj\Debug\net6.0\FinalTest2022.csproj.AssemblyReference.cache
+E:\Bootcamp\Program\CSharpLogic\FinalTest\FinalTest2022\obj\Debug\net6.0\FinalTest2022.GeneratedMSBuildEditorConfig.editorconfig
+E:\Bootcamp\Program\CSharpLogic\FinalTest\FinalTest2022\obj\Debug\net6.0\FinalTest2022.AssemblyInfoInputs.cache
+E:\Bootcamp\Program\CSharpLogic\FinalTest\FinalTest2022\obj\Debug\net6.0\FinalTest2022.AssemblyInfo.cs
+E:\Bootcamp\Program\CSharpLogic\FinalTest\FinalTest2022\obj\Debug\net6.0\FinalTest2022.csproj.CoreCompileInputs.cache
+E:\Bootcamp\Program\CSharpLogic\FinalTest\FinalTest2022\obj\Debug\net6.0\FinalTest2022.dll
+E:\Bootcamp\Program\CSharpLogic\FinalTest\FinalTest2022\obj\Debug\net6.0\refint\FinalTest2022.dll
+E:\Bootcamp\Program\CSharpLogic\FinalTest\FinalTest2022\obj\Debug\net6.0\FinalTest2022.pdb
+E:\Bootcamp\Program\CSharpLogic\FinalTest\FinalTest2022\obj\Debug\net6.0\FinalTest2022.genruntimeconfig.cache
+E:\Bootcamp\Program\CSharpLogic\FinalTest\FinalTest2022\obj\Debug\net6.0\ref\FinalTest2022.dll
